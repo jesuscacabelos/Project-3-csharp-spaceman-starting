@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "restore": {
+    "c:\\Users\\jesus.cacabelos\\OneDrive - SoftwareONE\\Documents\\projects\\csharp-spaceman-starting\\Spaceman.csproj": {}
+  },
+  "projects": {
+    "c:\\Users\\jesus.cacabelos\\OneDrive - SoftwareONE\\Documents\\projects\\csharp-spaceman-starting\\Spaceman.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\jesus.cacabelos\\OneDrive - SoftwareONE\\Documents\\projects\\csharp-spaceman-starting\\Spaceman.csproj",
+        "projectName": "Spaceman",
+        "projectPath": "c:\\Users\\jesus.cacabelos\\OneDrive - SoftwareONE\\Documents\\projects\\csharp-spaceman-starting\\Spaceman.csproj",
+        "packagesPath": "C:\\Users\\jesus.cacabelos\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\jesus.cacabelos\\OneDrive - SoftwareONE\\Documents\\projects\\csharp-spaceman-starting\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jesus.cacabelos\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
