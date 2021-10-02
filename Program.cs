@@ -12,6 +12,11 @@ namespace csharp_spaceman_starting
                 game.Display();
                 game.Ask();
             }while(!(game.DidWin()||game.DidLose()));
+            if(game.DidLose()){
+                Console.WriteLine("You lost, you couldn't save him.");
+            }else{
+                Console.WriteLine("You won! You saved him!");
+            }
         }
     }
 }

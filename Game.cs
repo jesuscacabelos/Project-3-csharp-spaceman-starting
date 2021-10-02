@@ -17,7 +17,7 @@ namespace csharp_spaceman_starting
 
         public Game(){
             Random rand = new Random();
-            this.CodeWords = new string[] {"space", "galaxy", "chinatown", "hola", "oye", "chiniwini"};
+            this.CodeWords = new string[] {"espacio", "galaxia", "japon", "hola", "oye", "chiniwini", "ayuntamiento", "casa", "doctor", "hambre"};
             this.Ovni = new Ufo();
             this.CodeWord = this.CodeWords[rand.Next(0,this.CodeWords.Length)];
             this.TotalTries = 5;
@@ -55,7 +55,7 @@ namespace csharp_spaceman_starting
 
         //Devuelve true si ha perdido.
         public bool DidLose(){
-            if(this.ActualTries > this.TotalTries){
+            if(this.ActualTries >= this.TotalTries){
                 return true;
             }else{
                 return false;
@@ -64,7 +64,7 @@ namespace csharp_spaceman_starting
 
         //Escribe en pantalla información, el muñeco, el progreso en la palabra y el numero de intentos.
         public void Display(){
-            this.Ovni.Stringify();
+            Console.WriteLine(this.Ovni.Stringify());
             Console.WriteLine(this.CurrentWord);
             Console.WriteLine($"Number of fails remaining: {this.TotalTries-this.ActualTries}");
         }
@@ -99,7 +99,7 @@ namespace csharp_spaceman_starting
                 }else{
                     //Si no existe le resta un intento, avanza el dibujo y le informa que ha fallado.
                     this.ActualTries++;
-                    ovni.AddPart();
+                    this.Ovni.AddPart();
                     Console.WriteLine("That letter isn't in the word.");
                 }
             }
