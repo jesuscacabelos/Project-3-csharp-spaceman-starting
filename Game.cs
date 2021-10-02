@@ -10,14 +10,16 @@ namespace csharp_spaceman_starting
         private string currentWord;
         private int totalTries;
         private int actualTries;
-        private string[] codeWords = {"space", "galaxy", "chinatown", "hola", "oye", "chiniwini"};
-        private Ufo ovni = new Ufo(); 
+        private string[] codeWords;
+        private Ufo ovni;
 
         //Constructores -------------------------------------------
 
         public Game(){
-            Random Rand = new Random();
-            this.CodeWord = CodeWords[Rand.Next(0,CodeWords.Length)];
+            Random rand = new Random();
+            this.CodeWords = new string[] {"space", "galaxy", "chinatown", "hola", "oye", "chiniwini"};
+            this.Ovni = new Ufo();
+            this.CodeWord = this.CodeWords[rand.Next(0,this.CodeWords.Length)];
             this.TotalTries = 5;
             this.ActualTries = 0;
             this.CurrentWord = "";
@@ -30,7 +32,7 @@ namespace csharp_spaceman_starting
 
         public string CodeWord {get; set;}
         public string CurrentWord {get; set;}
-        public int TotalTries {get;}
+        public int TotalTries {get; set;}
         public int ActualTries {get; set;}
         public string[] CodeWords {get; set;}
         public Ufo Ovni {get; set;}

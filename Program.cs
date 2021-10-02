@@ -6,7 +6,12 @@ namespace csharp_spaceman_starting
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello world");
+            Game game = new Game();
+            game.Greet();
+            do{
+                game.Display();
+                game.Ask();
+            }while(!(game.DidWin()||game.DidLose()));
         }
     }
 }
