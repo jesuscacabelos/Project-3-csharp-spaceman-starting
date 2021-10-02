@@ -1,6 +1,6 @@
 using System;
 
-namespace Spaceman
+namespace csharp_spaceman_starting
 {
 
     class Game{
